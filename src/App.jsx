@@ -8,6 +8,7 @@ import Index from "./pages/Index.jsx";
 import Category from "./pages/Category.jsx";
 import Topic from "./pages/Topic.jsx";
 import UserProfile from "./pages/UserProfile.jsx";
+import Register from "./pages/Register.jsx";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App = () => {
               <Route path="categories/:categoryId" element={<Category />} />
               <Route path="topics/:topicId" element={<Topic />} />
               <Route path="profile" element={<UserProfile />} />
+              <Route path="/register" element={<Register />} />
             </Route>
           </Routes>
         </Router>

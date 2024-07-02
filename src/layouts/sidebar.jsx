@@ -48,6 +48,7 @@ const Sidebar = () => (
               {item.title}
             </SidebarNavLink>
           ))}
+          <SidebarNavLink to="/register">Register</SidebarNavLink>
         </nav>
       </div>
     </div>
@@ -77,6 +78,7 @@ const MobileSidebar = () => (
             {item.title}
           </SidebarNavLink>
         ))}
+        <SidebarNavLink to="/register">Register</SidebarNavLink>
       </nav>
     </SheetContent>
   </Sheet>
