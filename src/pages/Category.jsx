@@ -1,5 +1,12 @@
 import { Link, useParams } from "react-router-dom";
 
+const categories = [
+  { id: 1, name: "General Discussion" },
+  { id: 2, name: "Programming" },
+  { id: 3, name: "Hardware" },
+  { id: 4, name: "Software" },
+];
+
 const topics = [
   { id: 1, title: "Welcome to the forum", author: "Admin", replies: 10, lastPost: "2023-10-01" },
   { id: 2, title: "How to learn JavaScript", author: "User123", replies: 5, lastPost: "2023-10-02" },
@@ -8,6 +15,7 @@ const topics = [
 const Category = () => {
   const { categoryId } = useParams();
   const category = categories.find((cat) => cat.id === parseInt(categoryId));
+  
 
   return (
     <div>

@@ -1,5 +1,10 @@
 import { useParams } from "react-router-dom";
 
+const topics = [
+  { id: 1, title: "Welcome to the forum", author: "Admin", replies: 10, lastPost: "2023-10-01" },
+  { id: 2, title: "How to learn JavaScript", author: "User123", replies: 5, lastPost: "2023-10-02" },
+];
+
 const posts = [
   { id: 1, author: "Admin", date: "2023-10-01", content: "Welcome to the forum!" },
   { id: 2, author: "User123", date: "2023-10-02", content: "How do I learn JavaScript?" },
@@ -8,6 +13,7 @@ const posts = [
 const Topic = () => {
   const { topicId } = useParams();
   const topic = topics.find((top) => top.id === parseInt(topicId));
+  
 
   return (
     <div>
